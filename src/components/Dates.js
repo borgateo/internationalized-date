@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { parseDate, parseZonedDateTime, now } from '@internationalized/date';
+import { parseDate, parseZonedDateTime } from '@internationalized/date';
 import { Card, CardHeader, CardContent } from './ui/card';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 
-const InternationalizedDateDemo = () => {
+export const Dates = () => {
   const [dateString, setDateString] = useState('2023-04-15');
   const [timeZone, setTimeZone] = useState('America/New_York');
   const [result, setResult] = useState('');
@@ -100,5 +100,3 @@ const InternationalizedDateDemo = () => {
     </Card>
   );
 };
-
-export default InternationalizedDateDemo;
